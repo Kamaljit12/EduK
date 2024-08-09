@@ -19,13 +19,11 @@ with c2:
     c2.markdown("<h1 style='text-align: center; color:#7C129D;'>WELCOME TO Stream App !<h1>", unsafe_allow_html=True)
 
 
-options = [None, 'Hindi', 'English', 'Maths']
+options = ['Hindi', 'English', 'Maths']
 
 selected_option = st.selectbox('Select Option', options=options)
-if selected_option == None:
-    st.title("Hello Usrs Welcome to the Main page!")
 
-elif selected_option == 'Hindi':
+if selected_option == 'Hindi':
     hindi.hindiPoem()
 
 elif selected_option == 'English':
